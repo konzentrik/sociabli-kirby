@@ -1,0 +1,40 @@
+{
+    "name": "konzentrik/kirby-sociabli",
+    "version": "1.0.0",
+    "homepage": "https://github.com/konzentrik/kirby-sociabli",
+    "description": "The sociabli plugin for Kirby",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maurice Renck",
+            "email": "maurice.renck@konzentrik.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "konzentrik\\Sociabli\\": "lib/"
+        },
+        "classmap": [
+            "lib"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
+    },
+    "require": {
+        "php": ">=8.2.0",
+        "getkirby/composer-installer": "^1.2"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox --colors=always",
+        "build-test-package": "git archive HEAD -o sociabli.zip --worktree-attributes",
+        "build-composer": "composer install --no-dev --optimize-autoloader",
+        "build-release": [
+            "composer install --no-dev --optimize-autoloader"
+        ]
+    }
+}
