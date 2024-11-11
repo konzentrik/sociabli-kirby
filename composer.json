@@ -1,7 +1,7 @@
 {
-    "name": "konzentrik/kirby-sociabli",
+    "name": "konzentrik/sociabli-kirby",
     "version": "1.0.0",
-    "homepage": "https://github.com/konzentrik/kirby-sociabli",
+    "homepage": "https://github.com/konzentrik/sociabli-kirby",
     "description": "The sociabli plugin for Kirby",
     "type": "kirby-plugin",
     "license": "MIT",

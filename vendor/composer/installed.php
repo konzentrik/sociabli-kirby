@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'konzentrik/kirby-sociabli',
+        'name' => 'konzentrik/sociabli-kirby',
         'pretty_version' => '1.0.0',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -19,7 +19,7 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'konzentrik/kirby-sociabli' => array(
+        'konzentrik/sociabli-kirby' => array(
             'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
             'reference' => NULL,
