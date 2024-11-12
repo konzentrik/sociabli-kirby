@@ -13,12 +13,23 @@ return [
             $webhookId = option('konzentrik.sociabli.webhookId', null);
             $webhookToken = option('konzentrik.sociabli.token', null);
 
+            $allowedTemplates = option('konzentrik.sociabli.templates.allowed', '[]');
+            $blockedTemplates = option('konzentrik.sociabli.templates.blocked', '[]');
+
             $fieldIntro = option('konzentrik.sociabli.fields.intro', 'description');
             $fieldText = option('konzentrik.sociabli.fields.text', 'text');
             $fieldImage = option('konzentrik.sociabli.fields.image', null);
             $fieldTags = option('konzentrik.sociabli.fields.tags', 'tags');
 
             $publishStatus = option('konzentrik.sociabli.publishStatus', 'draft');
+
+            if (count($blockedTemplates) > 0 && in_array($newPage->intendedTemplate(), $blockedTemplates)) {
+                return;
+            }
+
+            if (count($allowedTemplates) > 0 && !in_array($newPage->intendedTemplate(), $allowedTemplates)) {
+                return;
+            }
 
             if (is_null($webhookId) || is_null($webhookToken)) {
                 return;
