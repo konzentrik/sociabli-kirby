@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/konzentrik/sociabli-kirby/compare/v1.1.0...v1.1.1) (2024-11-12)
+
+
+### Bug Fixes
+
+* set default values for templates ([4e17aa5](https://github.com/konzentrik/sociabli-kirby/commit/4e17aa5f6fad0ce713e2cb30d4728490e4ab1347))
+
 # [1.1.0](https://github.com/konzentrik/sociabli-kirby/compare/v1.0.0...v1.1.0) (2024-11-12)
 
 
