@@ -13,8 +13,8 @@ return [
             $webhookId = option('konzentrik.sociabli.webhookId', null);
             $webhookToken = option('konzentrik.sociabli.token', null);
 
-            $allowedTemplates = option('konzentrik.sociabli.templates.allowed', '[]');
-            $blockedTemplates = option('konzentrik.sociabli.templates.blocked', '[]');
+            $allowedTemplates = option('konzentrik.sociabli.templates.allowed', []);
+            $blockedTemplates = option('konzentrik.sociabli.templates.blocked', []);
 
             $fieldIntro = option('konzentrik.sociabli.fields.intro', 'description');
             $fieldText = option('konzentrik.sociabli.fields.text', 'text');
