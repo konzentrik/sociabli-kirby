@@ -23,11 +23,11 @@ return [
 
             $publishStatus = option('konzentrik.sociabli.publishStatus', 'draft');
 
-            if (count($blockedTemplates) > 0 && in_array($newPage->intendedTemplate(), $blockedTemplates)) {
+            if (count($blockedTemplates) > 0 && in_array($newPage->intendedTemplate()->name(), $blockedTemplates)) {
                 return;
             }
 
-            if (count($allowedTemplates) > 0 && !in_array($newPage->intendedTemplate(), $allowedTemplates)) {
+            if (count($allowedTemplates) > 0 && !in_array($newPage->intendedTemplate()->name(), $allowedTemplates)) {
                 return;
             }
 
@@ -78,7 +78,7 @@ return [
                     }
                 }
 
-                Remote::request('https://smoggy-rosabelle-konzentrik-754b049a.koyeb.app/webhook/' . $webhookId, [
+                Remote::request('https://workflows.sociab.li/webhook/' . $webhookId, [
                     'method' => 'POST',
                     'headers' => $headers,
                     'data' => json_encode($requestBody),
