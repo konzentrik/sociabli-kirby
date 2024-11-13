@@ -78,7 +78,7 @@ return [
                     }
                 }
 
-                Remote::request('https://workflows.sociab.li/webhook/' . $webhookId, [
+                Remote::request('https://webhook.sociab.li/' . $webhookId, [
                     'method' => 'POST',
                     'headers' => $headers,
                     'data' => json_encode($requestBody),
