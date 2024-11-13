@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/konzentrik/sociabli-kirby/compare/v1.1.1...v1.1.2) (2024-11-13)
+
+
+### Bug Fixes
+
+* intendedTemplate and webhook url ([954beca](https://github.com/konzentrik/sociabli-kirby/commit/954beca536b1ef6d6e8edbb41eb3a3923b3ec3d9))
+
 ## [1.1.1](https://github.com/konzentrik/sociabli-kirby/compare/v1.1.0...v1.1.1) (2024-11-12)
 
 
